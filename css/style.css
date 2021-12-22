@@ -1,0 +1,130 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #0c0c1a;
+    
+}
+header{
+    text-align: center;
+    background-color: #880000d7;
+    color: gold;
+    text-shadow: 2px 4px 2px black;
+}
+
+.title{
+    font-size: 200%;
+}
+
+section{
+    background-image: url('../images/BackgroundAranha.jpg');
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 800px;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.mb{
+    margin-bottom: 10px;
+}
+
+.formContainer{
+    float: right;
+    max-width: 230px;
+    padding: 20px;
+    background-image: linear-gradient(45deg, #0000ff21, #ff000073);
+    border-radius: 10px;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+input:hover, select:hover{
+    border: 1px solid black
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: #ff000073;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aboutMe{
+    margin: 20px;
+}
+
+#pic{
+    width: 100px;
+}
+
+.text{
+    display: inline-block;
+    max-width: 30%;
+    color: white;
+    margin-left: 40px;
+    text-align: justify;
+}
+
+.text p, .text h3{
+    margin-bottom: 20px;
+}
+
+.signature{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+@media screen and (max-width:800px) {
+    .formContainer{
+        position: relative;
+        right: 45%;
+        transform: translateX(50%);
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .text{
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .text{
+        max-width: 50%;
+    }
+}
