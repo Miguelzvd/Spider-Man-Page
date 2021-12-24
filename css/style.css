@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -93,18 +92,25 @@ footer{
 
 .aboutMe{
     margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
 }
 
 #pic{
-    width: 100px;
+    width: 120px;
 }
 
 .text{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 20px;
     max-width: 30%;
     color: white;
-    margin-left: 40px;
-    text-align: justify;
+    text-align: left;
 }
 
 .text p, .text h3{
@@ -122,19 +128,10 @@ footer{
 @media screen and (max-width:800px) {
     .formContainer{
         position: relative;
-        right: 45%;
+        right: 50%;
         transform: translateX(50%);
         max-width: 300px;
     }
-}
-
-@media screen and (max-width:1200px){
-    .text{
-        max-width: 40%;
-    }
-}
-
-@media screen and (max-width:1000px){
     .text{
         max-width: 50%;
     }
